@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_head.html") %>
+  </head>
+  <body ng-app="top-100">
+
+    <main class="page">
+
+      <nav class="top-bar">
+        <a class="logo" href="http://www.sfchronicle.com">
+          <img src="./assets/sf_logo_black.png">
+        </a>
+      </nav>
+
+        <section class="banner">
+          <div class="top100-logo">
+            <img src="./assets/top100logo2015c_horizontal.jpg"></img>
+          </div>
+        </section>
+        <section class="centerpiece">
+            <img src="./assets/restaurant.jpg"></img>
+        </section>
+        <a class="share-button"></a>
+
+          <p class="chatter">
+            The Chronicle has compiled a list of the top 100 bay area restaurants in 2016. Peruse by restaurant name, cuisine, region, or curated guide.
+          </p>
+
+          <nav class="sections">
+            <ul>
+              <li class="pipes"> <a ui-sref="top100" ui-sref-active="active">Top 100</a>
+              <li class="pipes"> <a ui-sref="cuisines" ui-sref-active="active">Cuisines</a>
+              <li class="pipes"> <a ui-sref="regions" ui-sref-active="active">Regions</a>
+              <li class="pipes"> <a ui-sref="guides" ui-sref-active="active">Guides</a>
+            </ul>
+          </nav>
+
+        </div>
+      </section>
+      <section class="view-pane" ui-view></section>
+
+      <div class="credits">
+        Written by <span class="credit-name">Michael Bauer</span> &bull; Edited by <span class="credit-name">Editors</span> &bull; Web development by <span class="credit-name">Emma O'Neill and Lucio Villa</span> &bull; Images from <span class="credit-name">Photographers</span>
+      </div>
+
+      <footer>
+        <a class="logo" href="http://www.sfchronicle.com">
+          <img src="./assets/sf_logo_white.png">
+        </a>
+      </footer>
+
+    </main>
+
+
+    <script src="app.js" async></script>
+    <%= t.include("partials/_foot.html") %>
+    <%= t.include("partials/_helloSFC.html") %>
+  </body>
+</html>
