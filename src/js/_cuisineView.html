@@ -1,8 +1,21 @@
-<div class="cuisines-container" id="cuisines">
+<section class="cuisines">
 
   <div class="title">Cuisines</div>
 
+  <nav class="select-cuisine">
+    <a
+      ng-repeat="l in cuisines"
+      ng-class="{ active: l.data == cuisine }"
+      class="pipes"
+      ui-sref="cuisines({ cuisine: l.data })"
+      ui-sref-active="active"
+    >{{l.label}}</a>
+  </nav>
 
+  <div class="restaurants-container">
+    <div class="restaurant-block" ng-repeat="restaurant in restaurants_by_cuisine"><a href={{restaurant.StoryPageLink_WCM}} target="_blank"><div class="name">{{restaurant.Name}}</div></a>
+    </div>
 
+  </div>
 
-</div>
+</section>

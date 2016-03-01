@@ -40,6 +40,11 @@
             </ul>
           </nav>
 
+          <div class="search-container">
+            <span class="search">Search by restaurant name or cuisine:</span>
+            <input type="text" ng-change="search()" ng-model="searchText">
+          </div>
+
         </div>
       </section>
       <section class="view-pane" ui-view></section>
@@ -56,6 +61,9 @@
 
     </main>
 
+    <script>
+    window.guideData = <%= JSON.stringify(json.Top100_info) %>;
+    </script>
 
     <script src="app.js" async></script>
     <%= t.include("partials/_foot.html") %>

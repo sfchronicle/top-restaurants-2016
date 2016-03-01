@@ -1,9 +1,18 @@
-//var data = require("./guideData");
+var data = require("./guideData");
 
 var top100Controller = function($scope, $state) {
 
-  $scope.test = "hello world";
-  console.log($state);
+  $scope.data = data.data;
+  $scope.show = 0;
+  var text_options = ["more","less"];
+  $scope.textText = text_options[$scope.show];
+
+  $scope.toggleShow = function(show) {
+    $scope.show = !(show);
+    $scope.textText = text_options[$scope.show];
+    console.log($scope.show);
+    console.log($scope.textText);
+  };
 
 };
 

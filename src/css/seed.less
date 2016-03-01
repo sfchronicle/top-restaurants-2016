@@ -14,7 +14,7 @@
 
 body {
 
-  max-width: 620px;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
   font-family: @block;
@@ -28,12 +28,54 @@ body {
     margin: auto;
     margin-top: 20px;
   }
-  .centerpiece {
-    width: 100%;
+}
+
+.centerpiece {
+  img {
+    width: 80%;
   }
 }
 
-nav.sections {
+.restaurant-boxes {
+  max-width: 1000px;
+  display: flex;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  margin-left: 10px;
+  img{
+    width: 250px;
+  }
+  .name {
+    margin-bottom: 40px;
+  }
+}
+
+// .restaurants-container {
+//   .restaurant-block {
+//     display: inline-block;
+//     img {
+//       width: 200px;
+//     }
+//     .name {
+//       vertical-align: middle;
+//     }
+//   }
+// }
+
+.read-more {
+  cursor: pointer;
+}
+
+.story-text-part2 {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+nav.sections, nav.select-cuisine, nav.select-region {
   display: block;
   font-size: 20px;
   margin: auto;
@@ -46,9 +88,10 @@ nav.sections {
     padding: 0px 8px;
     border-radius: 8px;
     transition: none;
+    color: @df-middle-gray;
 
     &.active {
-      color: @df-middle-gray;
+      color: white;
 
       &:hover {
         text-decoration: none;

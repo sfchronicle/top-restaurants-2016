@@ -23,13 +23,13 @@ var configFunction = function($state, $router) {
   $router.otherwise("/top100/");
 
   $state.state("cuisines", {
-    url: "/cuisines/",
+    url: "/cuisines/{cuisine}",
     template: require("./_cuisineView.html"),
     controller: require("./cuisineController")
   });
 
   $state.state("regions", {
-    url: "/regions/",
+    url: "/regions/{region}",
     template: require("./_regionView.html"),
     controller: require("./regionController")
   });
