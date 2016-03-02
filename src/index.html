@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <%= t.include("partials/_head.html") %>
   </head>
   <body ng-app="top-100">
@@ -37,15 +38,10 @@
               <li class="pipes"> <a ui-sref="cuisines" ui-sref-active="active">Cuisines</a>
               <li class="pipes"> <a ui-sref="regions" ui-sref-active="active">Regions</a>
               <li class="pipes"> <a ui-sref="guides" ui-sref-active="active">Guides</a>
+              <li class="pipes"> <a ui-sref="search" ui-sref-active="active"><i class="fa fa-search"></i> Search</a>
             </ul>
           </nav>
 
-          <div class="search-container">
-            <span class="search">Search by restaurant name or cuisine:</span>
-            <input type="text" ng-change="search()" ng-model="searchText">
-          </div>
-
-        </div>
       </section>
       <section class="view-pane" ui-view></section>
 

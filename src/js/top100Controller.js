@@ -8,10 +8,8 @@ var top100Controller = function($scope, $state) {
   $scope.textText = text_options[$scope.show];
 
   $scope.toggleShow = function(show) {
-    $scope.show = !(show);
+    $scope.show = !(show)+0;
     $scope.textText = text_options[$scope.show];
-    console.log($scope.show);
-    console.log($scope.textText);
   };
 
 };

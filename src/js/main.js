@@ -46,6 +46,12 @@ var configFunction = function($state, $router) {
     controller: require("./top100Controller")
   });
 
+  $state.state("search", {
+    url: "/search/",
+    template: require("./_searchView.html"),
+    controller: require("./searchController")
+  });
+
 };
 configFunction.$inject = ["$stateProvider", "$urlRouterProvider"];
 

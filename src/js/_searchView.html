@@ -1,0 +1,11 @@
+<div class="search-container">
+  <span class="search">Search by restaurant name or cuisine:</span>
+  <input type="text" ng-change="search()" ng-model="searchText">
+</div>
+
+<div ng-show="found.length == 0 && !untouched">
+    <em>No results found.</em></div>
+<div ng-repeat="row in found">
+    {{row.Name}}
+    {{row.Cuisine}}
+</div>
