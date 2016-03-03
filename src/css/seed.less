@@ -36,6 +36,21 @@ body {
   }
 }
 
+.restaurant-block {
+  cursor: pointer;
+  display: block;
+  &.visible {
+    display: none;
+  }
+}
+
+// .restaurant-page {
+//   display: none;
+//   &.visible {
+//     display: block;
+//   }
+// }
+
 .restaurant-boxes {
   max-width: 1000px;
   display: flex;
@@ -52,24 +67,16 @@ body {
   }
 }
 
-// .restaurants-container {
-//   .restaurant-block {
-//     display: inline-block;
-//     img {
-//       width: 200px;
-//     }
-//     .name {
-//       vertical-align: middle;
-//     }
-//   }
-// }
+.parag {
+  padding-bottom: 5px;
+}
 
 .read-more {
   cursor: pointer;
-  padding: 10px 0;
-  .fa-long-arrow-right {
-    padding-left: 10px;
-    vertical-align: middle;
+  padding-bottom: 15px;
+  .fa-hand-o-right {
+    padding-right: 10px;
+    //vertical-align: middle;
   }
 }
 

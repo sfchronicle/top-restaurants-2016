@@ -1,15 +1,16 @@
 <div class="story-text">
-  <div>The Bay Area loves to eat. Our lust — and respect — for food are centuries old.</div>
-  <div>Maybe it’s a legacy of the Gold Rush, when “free lunch” was offered at the brothels that dotted just about every street corner of San Francisco. Because of this link, there’s always been a strong connection between food and carnal pleasure. Dining is more than sustenance — it’s pure, unadulterated joy.</div>
+  <div class="parag">The Bay Area loves to eat. Our lust — and respect — for food are centuries old.</div>
+  <div class="parag">Maybe it’s a legacy of the Gold Rush, when “free lunch” was offered at the brothels that dotted just about every street corner of San Francisco. Because of this link, there’s always been a strong connection between food and carnal pleasure. Dining is more than sustenance — it’s pure, unadulterated joy.</div>
 </div>
-<div class="read-more";
-  ng-click="toggleShow(show)"><a>Click to read {{textText}}<i class="fa fa-long-arrow-right"></i></a></div>
 <div class="story-text-part2"
   ng-class="{'active': show == 1}">
-  <div>San Francisco has been a gold mine of originality for more than 160 years: the creation of Boudin sourdough bread in 1849; the first air-dried salami in 1896 from Molinari; the establishment of Ghirardelli chocolate in 1852 and Guittard in 1868. All these built a foundation of innovation that is clearly evident in the food scene today.</div>
-  <div>I’ve been producing the Top 100 Bay Area Restaurants guide for 20 years, but with each edition I marvel anew at the quality of what we have. Chefs continue to start trends that then sweep the country — small plates, open kitchens, communal tables and organic produce.</div>
-  <div>We have such a powerful restaurant scene that the list could swell to 150 or 200 and still exclude many excellent places. That’s what makes the task of creating this guide so wonderful, yet so challenging.</div>
+  <div class="parag">San Francisco has been a gold mine of originality for more than 160 years: the creation of Boudin sourdough bread in 1849; the first air-dried salami in 1896 from Molinari; the establishment of Ghirardelli chocolate in 1852 and Guittard in 1868. All these built a foundation of innovation that is clearly evident in the food scene today.</div>
+  <div class="parag">I’ve been producing the Top 100 Bay Area Restaurants guide for 20 years, but with each edition I marvel anew at the quality of what we have. Chefs continue to start trends that then sweep the country — small plates, open kitchens, communal tables and organic produce.</div>
+  <div class="parag">We have such a powerful restaurant scene that the list could swell to 150 or 200 and still exclude many excellent places. That’s what makes the task of creating this guide so wonderful, yet so challenging.</div>
 </div>
+<div class="read-more";
+  ng-click="toggleShow(show)"><a><i class="fa fa-hand-o-right"></i>Click to read {{textText}}</a></div>
+
 
 <div class="restaurant-boxes" ng-repeat="restaurant in data">
   <img src="./assets/restaurant.jpg"></img>

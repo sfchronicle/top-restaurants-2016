@@ -23,7 +23,7 @@ var configFunction = function($state, $router) {
   $router.otherwise("/top100/");
 
   $state.state("cuisines", {
-    url: "/cuisines/{cuisine}",
+    url: "/cuisines/{cuisine}/{name}",
     template: require("./_cuisineView.html"),
     controller: require("./cuisineController")
   });
@@ -35,19 +35,19 @@ var configFunction = function($state, $router) {
   });
 
   $state.state("guides", {
-    url: "/guides/",
+    url: "/guides/{guide}",
     template: require("./_guideView.html"),
     controller: require("./guideController")
   });
 
   $state.state("top100", {
-    url: "/top100/",
+    url: "/top100",
     template: require("./_top100View.html"),
     controller: require("./top100Controller")
   });
 
   $state.state("search", {
-    url: "/search/",
+    url: "/search",
     template: require("./_searchView.html"),
     controller: require("./searchController")
   });
