@@ -24,24 +24,21 @@ var cuisineController = function($scope, $state, $location) {
       }
     });
     $scope.restaurants_by_cuisine = restaurants_by_cuisine;
+    $scope.cuisine = cuisine;
   };
-
-  var cuisine = $scope.cuisine = $state.params.cuisine; // || "italian";
-  $scope.setCuisine(cuisine);
 
   $scope.chooseRestaurant = function(restaurant) {
     $scope.restaurantPageData = restaurant;
     $scope.restaurantActive = 1;
+    $state.go("cuisines",{cuisine: $scope.cuisine, name: restaurant.URLname}, {notify: false})
   }
 
-  $scope.$watch("page", function () {
-    console.log($scope.restaurantPageData);
-    if ($scope.restaurantPageData == []) return;
-    console.log("we are seeing data");
-    console.log($scope.restaurantPageData);
-    // update URL
-    $state.go("cuisines", { name: $scope.restaurantPageData.URLname });
-  });
+  $scope.cuisine = $state.params.cuisine; // || "italian";
+  $scope.setCuisine($scope.cuisine);
+  if ($state.params.name) {
+    var r = data.data.filter(item => item.URLname == $state.params.name).pop();
+    $scope.chooseRestaurant(r);
+  }
 
 };
 
