@@ -41,13 +41,13 @@ var configFunction = function($state, $router) {
   });
 
   $state.state("top100", {
-    url: "/top100",
+    url: "/top100/{name}",
     template: require("./_top100View.html"),
     controller: require("./top100Controller")
   });
 
   $state.state("search", {
-    url: "/search",
+    url: "/search/{name}",
     template: require("./_searchView.html"),
     controller: require("./searchController")
   });

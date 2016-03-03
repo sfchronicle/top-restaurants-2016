@@ -6,10 +6,14 @@ var searchController = function($scope, $state) {
 
   $scope.untouched = true;
   $scope.found = all;
+  $scope.restaurantActive = 0;
 
   $scope.search = debounce(function() {
 
     var value = $scope.searchText;
+    $scope.restaurantActive = 0;
+    $scope.restaurantPageData = [];
+    $state.go("search",{name: ""}, {notify: false})
 
     if (!value) {
       $scope.found = all;
@@ -26,6 +30,14 @@ var searchController = function($scope, $state) {
     }
     $scope.$apply();
   });
+
+  $scope.chooseRestaurant = function(restaurant) {
+    $scope.restaurantPageData = restaurant;
+    $scope.restaurantActive = 1;
+    $state.go("search",{name: restaurant.URLname}, {notify: false});
+    $scope.found = [];
+  }
+
 };
 
 var debounce = function(f, interval) {
