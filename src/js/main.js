@@ -35,7 +35,7 @@ var configFunction = function($state, $router) {
   });
 
   $state.state("guides", {
-    url: "/guides/{guide}",
+    url: "/guides/{guide}/{name}",
     template: require("./_guideView.html"),
     controller: require("./guideController")
   });
