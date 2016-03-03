@@ -2,7 +2,10 @@ var data = require("./guideData");
 
 console.log(data);
 
-var regionController = function($scope, $state) {
+var regionController = function($scope, $state, $location) {
+
+  $scope.restaurantActive = 0;
+  $scope.restaurantPageData = [];
 
   $scope.regions = [
     {label: "San Francisco", data: "sanfrancisco"},
@@ -20,14 +23,23 @@ var regionController = function($scope, $state) {
       }
     });
     $scope.restaurants_by_region = restaurants_by_region;
-    console.log(restaurants_by_region);
+    $scope.region = region;
   };
 
-  var region = $scope.region = $state.params.region;// || "italian";
+  $scope.chooseRestaurant = function(restaurant) {
+    $scope.restaurantPageData = restaurant;
+    $scope.restaurantActive = 1;
+    $state.go("regions",{region: $scope.region, name: restaurant.URLname}, {notify: false})
+  }
 
-  $scope.setRegion(region);
+  $scope.region = $state.params.region; // || "italian";
+  $scope.setRegion($scope.region);
+  if ($state.params.name) {
+    var r = data.data.filter(item => item.URLname == $state.params.name).pop();
+    $scope.chooseRestaurant(r);
+  }
 
 };
 
-regionController.$inject = ["$scope", "$state"];
+regionController.$inject = ["$scope", "$state", "$location"];
 module.exports = regionController;

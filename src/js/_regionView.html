@@ -7,14 +7,26 @@
       ng-repeat="l in regions"
       ng-class="{ active: l.data == region }"
       class="pipes"
-      ui-sref="regions({ region: l.data })"
+      ui-sref="regions({ region: l.data, name: [] })"
       ui-sref-active="active"
+      ng-click="restaurantActive = 0"
     >{{l.label}}</a>
   </nav>
 
-  <div class="restaurants-container">
-    <div class="restaurant-block" ng-repeat="restaurant in restaurants_by_region"><a href={{restaurant.StoryPageLink_WCM}} target="_blank"><div class="name">{{restaurant.Name}}</div></a>
-    </div>
+  <div class="restaurant-block"
+    ng-model = "selected"
+    ng-repeat="restaurant in restaurants_by_region"
+    ng-click="chooseRestaurant(restaurant)"
+    ng-class="{ 'visible': restaurantActive}">
+    {{restaurant.Name}}
+  </div>
+
+  <div class="page">
+    {{restaurantPageData.Name}}
+    {{restaurantPageData.Address}}
+    {{restaurantPageData.Chef}}
+    {{restaurantPageData.Meals}}
+    {{restaurantPageData.Entertainment}}
   </div>
 
 </section>

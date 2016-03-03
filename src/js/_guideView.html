@@ -1,7 +1,32 @@
-<div class="guides">
+<section class="guides">
 
-  <div class="title">Guides</div>
+  <div class="title">guides</div>
 
-  WE ARE WAITING FOR THESE TO BE FINALIZED
+  <nav class="select-guide">
+    <a
+      ng-repeat="l in guides"
+      ng-class="{ active: l.data == guide }"
+      class="pipes"
+      ui-sref="guides({ guide: l.data, name: [] })"
+      ui-sref-active="active"
+      ng-click="restaurantActive = 0"
+    >{{l.label}}</a>
+  </nav>
 
-</div>
+  <div class="restaurant-block"
+    ng-model = "selected"
+    ng-repeat="restaurant in restaurants_by_guide"
+    ng-click="chooseRestaurant(restaurant)"
+    ng-class="{ 'visible': restaurantActive}">
+    {{restaurant.Name}}
+  </div>
+
+  <div class="page" id="page">
+    {{restaurantPageData.Name}}
+    {{restaurantPageData.Address}}
+    {{restaurantPageData.Chef}}
+    {{restaurantPageData.Meals}}
+    {{restaurantPageData.Entertainment}}
+  </div>
+
+</section>

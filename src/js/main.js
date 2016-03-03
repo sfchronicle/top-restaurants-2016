@@ -29,7 +29,7 @@ var configFunction = function($state, $router) {
   });
 
   $state.state("regions", {
-    url: "/regions/{region}",
+    url: "/regions/{region}/{name}",
     template: require("./_regionView.html"),
     controller: require("./regionController")
   });

@@ -1,13 +1,22 @@
-var data = window.guideData;
+var guidesData = window.guidesData;
+var data = window.infoData;
 
 console.log(data);
+console.log(guidesData);
 
 var cuisineList = ["Italian", "Spanish", "American","French","American"];
-var cuisineData = [];
-var count = 0;
 
-data.forEach(function(a) {
+var guideList = ["SingularStandouts", "GreatPizza", "TopBurgers", "OpenLate", "ExceptionalBars", "BestofBrunch", "Outdoor", "SaturdayLunch", "Top100Classics", "Historic", "Views", "LiveMusic", "PrivateRooms", "Romantic", "FourStars"];
+
+data.forEach(function(a,index) {
   a.URLname = a.Name.toLowerCase().replace(" ","");
+  guideList.forEach(function(b) {
+    var variab= eval("guidesData[index]."+ b);
+    var guidelowercase = b.toLowerCase().replace(" ","");
+    if (variab == "x") {
+      a[guidelowercase] = guidelowercase;
+    };
+  });
 });
 
 var guide = {
