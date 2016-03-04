@@ -1,9 +1,6 @@
 var guidesData = window.guidesData;
 var data = window.infoData;
 
-console.log(data);
-console.log(guidesData);
-
 var cuisineList = ["Italian", "Spanish", "American","French","American"];
 
 var guideList = ["SingularStandouts", "GreatPizza", "TopBurgers", "OpenLate", "ExceptionalBars", "BestofBrunch", "Outdoor", "SaturdayLunch", "Top100Classics", "Historic", "Views", "LiveMusic", "PrivateRooms", "Romantic", "FourStars"];

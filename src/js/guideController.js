@@ -1,7 +1,5 @@
 var data = require("./guideData");
 
-console.log(data);
-
 var guideController = function($scope, $state, $location) {
 
   $scope.restaurantActive = 0;
