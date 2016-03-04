@@ -6,11 +6,22 @@ var top100Controller = function($scope, $state) {
   $scope.show = 0;
   var text_options = ["more","less"];
   $scope.textText = text_options[$scope.show];
+  $scope.restaurantActive = 0;
 
   $scope.toggleShow = function(show) {
     $scope.show = !(show)+0;
     $scope.textText = text_options[$scope.show];
   };
+
+  $scope.chooseRestaurant = function(restaurant) {
+    $scope.restaurantPageData = restaurant;
+    $scope.restaurantActive = 1;
+    $state.go("top100",{name: restaurant.URLname}, {notify: false});
+  }
+
+  $scope.reset = function() {
+    $state.go("search",{name: ""}, {notify: false});
+  }
 
 };
 

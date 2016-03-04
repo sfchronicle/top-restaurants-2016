@@ -13,7 +13,7 @@ var searchController = function($scope, $state) {
     var value = $scope.searchText;
     $scope.restaurantActive = 0;
     $scope.restaurantPageData = [];
-    $state.go("search",{name: ""}, {notify: false})
+    $state.go("search",{name: ""}, {notify: false});
 
     if (!value) {
       $scope.found = all;

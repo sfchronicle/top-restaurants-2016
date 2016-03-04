@@ -65,6 +65,9 @@ body {
   .name {
     margin-bottom: 40px;
   }
+  &.visible {
+    display: none;
+  }
 }
 
 .parag {
@@ -78,6 +81,16 @@ body {
     padding-right: 10px;
     //vertical-align: middle;
   }
+  &.visible {
+    display: none;
+  }
+}
+
+.story-text {
+  display: block;
+  &.visible {
+    display: none;
+  }
 }
 
 .story-text-part2 {
@@ -85,6 +98,13 @@ body {
   &.active {
     display: block;
   }
+  &.visible {
+    display: none;
+  }
+}
+
+.search-list {
+  cursor: pointer;
 }
 
 nav.sections, nav.select-cuisine, nav.select-region, nav.select-guide {
