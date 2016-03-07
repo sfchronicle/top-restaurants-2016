@@ -27,14 +27,11 @@ var guideController = function($scope, $state, $location) {
     var guide = l;
     var restaurants_by_guide = [];
     data.data.forEach(function(a,index) {
-      if ((a[guide]) && (a[guide].toLowerCase() == l)) {
-        console.log(a[guide]);
-        console.log("winner");
+      if ((a[guide]) && (a[guide].toLowerCase().replace(" ","") == l)) {
         restaurants_by_guide.push(a);
       }
     });
     $scope.restaurants_by_guide = restaurants_by_guide;
-    console.log(restaurants_by_guide);
     $scope.guide = guide;
   };
 

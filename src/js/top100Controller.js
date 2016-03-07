@@ -19,9 +19,16 @@ var top100Controller = function($scope, $state) {
     $state.go("top100",{name: restaurant.URLname}, {notify: false});
   }
 
-  $scope.reset = function() {
-    $state.go("search",{name: ""}, {notify: false});
-  }
+  // $scope.reset = function() {
+  //   $state.go("top100",{name: ""}, {notify: false});
+  // }
+  //
+  // $scope.region = $state.params.region; // || "italian";
+  // $scope.setRegion($scope.region);
+  // if ($state.params.name) {
+  //   var r = data.data.filter(item => item.URLname == $state.params.name).pop();
+  //   $scope.chooseRestaurant(r);
+  // }
 
 };
 
