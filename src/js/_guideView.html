@@ -16,17 +16,9 @@
   <div class="restaurant-block"
     ng-model = "selected"
     ng-repeat="restaurant in restaurants_by_guide"
-    ng-click="chooseRestaurant(restaurant)"
+    ui-sref="cuisines({ cuisine: restaurant.Cuisine, name: restaurant.URLname })"
     ng-class="{ 'visible': restaurantActive}">
     {{restaurant.Name}}
-  </div>
-
-  <div class="page" id="page">
-    {{restaurantPageData.Name}}
-    {{restaurantPageData.Address}}
-    {{restaurantPageData.Chef}}
-    {{restaurantPageData.Meals}}
-    {{restaurantPageData.Entertainment}}
   </div>
 
 </section>

@@ -34,7 +34,7 @@ var searchController = function($scope, $state) {
   $scope.chooseRestaurant = function(restaurant) {
     $scope.restaurantPageData = restaurant;
     $scope.restaurantActive = 1;
-    $state.go("search",{name: restaurant.URLname}, {notify: false});
+    $state.go("cuisines", {cuisine: restaurant.Cuisine, name: restaurant.URLname}, {notify: false});
     $scope.found = [];
   }
 

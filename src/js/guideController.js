@@ -38,7 +38,7 @@ var guideController = function($scope, $state, $location) {
   $scope.chooseRestaurant = function(restaurant) {
     $scope.restaurantPageData = restaurant;
     $scope.restaurantActive = 1;
-    $state.go("guides",{guide: $scope.guide, name: restaurant.URLname}, {notify: false})
+    $state.go("cuisines", {cuisine: restaurant.Cuisine, name: restaurant.URLname}, {notify: false});
   }
 
   $scope.guide = $state.params.guide; // || "italian";

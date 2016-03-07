@@ -1,5 +1,4 @@
-<section class="top100"
-  ng-click="reset()">
+<section class="top100">
 
   <div class="story-text"
     ng-class="{ 'visible': restaurantActive}">
@@ -20,14 +19,15 @@
   </div>
 
   <div class="restaurant-boxes"
+    ng-model = "selected"
     ng-repeat="restaurant in data"
-    ng-click="chooseRestaurant(restaurant)"
+    ui-sref="cuisines({ cuisine: restaurant.Cuisine, name: restaurant.URLname })"
     ng-class="{ 'visible': restaurantActive}">
     <img src="./assets/restaurant.jpg"></img>
     {{restaurant.Name}}
   </div>
 
-  <div class="page" id="page">
+  <div class="page">
     {{restaurantPageData.Name}}
     {{restaurantPageData.Address}}
     {{restaurantPageData.Chef}}
