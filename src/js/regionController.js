@@ -16,7 +16,7 @@ var regionController = function($scope, $state, $location) {
     var region = l;
     var restaurants_by_region = [];
     data.data.forEach(function(a,index) {
-      if ((a.Region) && (a.Region.toLowerCase().replace(" ","") == l)) {
+      if ((a.Region) && (a.Region.toLowerCase().split(" ").join("") == l)) {
         restaurants_by_region.push(a);
       }
     });

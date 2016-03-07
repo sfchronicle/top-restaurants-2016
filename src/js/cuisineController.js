@@ -16,7 +16,7 @@ var cuisineController = function($scope, $state, $location) {
     var cuisine = l;
     var restaurants_by_cuisine = [];
     data.data.forEach(function(a,index) {
-      if ((a.Cuisine) && (a.Cuisine.toLowerCase().replace(" ","") == l)) {
+      if ((a.Cuisine) && (a.Cuisine.toLowerCase().split(" ").join("") == l)) {
         restaurants_by_cuisine.push(a);
       }
     });

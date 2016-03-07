@@ -27,7 +27,7 @@ var guideController = function($scope, $state, $location) {
     var guide = l;
     var restaurants_by_guide = [];
     data.data.forEach(function(a,index) {
-      if ((a[guide]) && (a[guide].toLowerCase().replace(" ","") == l)) {
+      if ((a[guide]) && (a[guide].toLowerCase().split(" ").join("") == l)) {
         restaurants_by_guide.push(a);
       }
     });
