@@ -1,6 +1,6 @@
 var data = require("./guideData");
 
-var top100Controller = function($scope, $state, $location) {
+var top100Controller = function($scope, $state) {
 
   $scope.data = data.data;
   $scope.show = 0;
@@ -13,13 +13,17 @@ var top100Controller = function($scope, $state, $location) {
     $scope.textText = text_options[$scope.show];
   };
 
+  // $scope.reset = function() {
+  //   $state.go("top100",{name: ""}, {notify: false});
+  // }
+
   $scope.chooseRestaurant = function(restaurant) {
     $scope.restaurantPageData = restaurant;
     $scope.restaurantActive = 1;
-    $state.go("cuisines", {cuisine: restaurant.Cuisine, name: restaurant.URLname}, {notify: false});
+    $state.go("top100",{name: restaurant.URLname}, {notify: false});
   }
 
 };
 
-top100Controller.$inject = ["$scope", "$state", "$location"];
+top100Controller.$inject = ["$scope", "$state"];
 module.exports = top100Controller;

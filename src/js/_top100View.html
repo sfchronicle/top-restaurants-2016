@@ -21,18 +21,12 @@
   <div class="restaurant-boxes"
     ng-model = "selected"
     ng-repeat="restaurant in data"
-    ui-sref="cuisines({ cuisine: restaurant.Cuisine, name: restaurant.URLname })"
+    ng-click="chooseRestaurant(restaurant)"
     ng-class="{ 'visible': restaurantActive}">
     <img src="./assets/restaurant.jpg"></img>
     {{restaurant.Name}}
   </div>
 
-  <div class="page">
-    {{restaurantPageData.Name}}
-    {{restaurantPageData.Address}}
-    {{restaurantPageData.Chef}}
-    {{restaurantPageData.Meals}}
-    {{restaurantPageData.Entertainment}}
-  </div>
+  <div ng-include=" 'restaurantPage.html' "></div>
 
 </section>

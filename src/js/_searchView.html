@@ -6,8 +6,10 @@
 <div ng-show="found.length == 0 && !untouched && !restaurantActive">
     <em>No results found.</em></div>
 <div ng-repeat="row in found"
-  ui-sref="cuisines({ cuisine: row.Cuisine, name: row.URLname })"
+  ng-click="chooseRestaurant(row)"
   class="search-list">
     {{row.Name}}
     {{row.Cuisine}}
 </div>
+
+<div ng-include=" 'restaurantPage.html' "></div>
