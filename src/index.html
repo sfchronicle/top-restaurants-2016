@@ -38,7 +38,7 @@
               <li class="pipes"> <a ui-sref="cuisines" ui-sref-active="active">Cuisines</a>
               <li class="pipes"> <a ui-sref="regions" ui-sref-active="active">Regions</a>
               <li class="pipes"> <a ui-sref="guides" ui-sref-active="active">Guides</a>
-              <li class="pipes"> <a ui-sref="search" ui-sref-active="active"><i class="fa fa-search"></i> Search</a>
+              <li class="pipes"> <a ui-sref="search" ui-sref-active="active"><i class="fa fa-search"></i> Search the list</a>
             </ul>
           </nav>
 
@@ -58,8 +58,10 @@
     </main>
 
     <script>
-    window.infoData = <%= JSON.stringify(json.Top100RestaurantsUSETHIS_info) %>;
-    window.guidesData = <%= JSON.stringify(json.Top100RestaurantsUSETHIS_guides) %>;
+    window.infoData = <%= JSON.stringify(json.Top100Restaurants2016USETHIS_info) %>;
+    window.guidesData = <%= JSON.stringify(json.Top100Restaurants2016USETHIS_guides) %>;
+    console.log(window.infoData);
+    console.log(window.guidesData);
     </script>
 
     <script src="app.js" async></script>

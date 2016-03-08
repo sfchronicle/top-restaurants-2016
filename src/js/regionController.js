@@ -10,18 +10,34 @@ var regionController = function($scope, $state, $location) {
     {label: "North Bay", data: "northbay"},
     {label: "East Bay", data: "eastbay"},
     {label: "South Bay", data: "southbay"},
-  ]
+  ];
 
   $scope.setRegion = function(l) {
     var region = l;
-    var restaurants_by_region = [];
+    var subregions = [];
+    if (region == "sanfrancisco") {
+      subregions = ["SoMa", "Mission", "Marina", "Russian Hill", "Financial District", "Presidio", "Castro", "The Richmond", "Noe Valley", "Pacific Heights", "Nopa", "Bernal Heights", "Nob Hill"];
+    } else if (region == "northbay") {
+      subregions = ["Yountville", "Napa", "Healdsburg", "Larkspur"];
+    } else if (region == "eastbay") {
+      subregions = ["Oakland", "Port Costa", "Berkeley"];
+    } else if (region == "southbay") {
+      subregions = ["Los Gatos"];
+    }
+    $scope.subregions = subregions;
+  };
+
+  $scope.setSubregion = function(b) {
+    var subregion = b;
+    var restaurants_by_subregion = [];
     data.data.forEach(function(a,index) {
-      if ((a.Region) && (a.Region.toLowerCase().split(" ").join("") == l)) {
-        restaurants_by_region.push(a);
+      if ((a.SubRegion) && (a.SubRegion == b)) {
+        restaurants_by_subregion.push(a);
       }
     });
-    $scope.restaurants_by_region = restaurants_by_region;
-    $scope.region = region;
+    $scope.restaurants_by_subregion = restaurants_by_subregion;
+    $scope.subregion = subregion;
+    $scope.activesubregion = subregion;
   };
 
   $scope.chooseRestaurant = function(restaurant) {
@@ -31,7 +47,9 @@ var regionController = function($scope, $state, $location) {
   }
 
   $scope.region = $state.params.region; // || "italian";
+  $scope.subregion = $state.params.subregion;
   $scope.setRegion($scope.region);
+  $scope.setSubregion($scope.subregion);
   if ($state.params.name) {
     var r = data.data.filter(item => item.URLname == $state.params.name).pop();
     $scope.chooseRestaurant(r);

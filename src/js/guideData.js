@@ -7,8 +7,12 @@ var guideList = ["SingularStandouts", "GreatPizza", "TopBurgers", "OpenLate", "E
 
 data.forEach(function(a,index) {
   a.URLname = a.Name.toLowerCase().split(" ").join("");
-  console.log(a.URLname);
   guideList.forEach(function(b) {
+    try {
+      eval("guidesData[index]."+ b)
+    } catch(e) {
+      alert(e.message);
+    }
     var variab= eval("guidesData[index]."+ b);
     var guidelowercase = b.toLowerCase().split(" ").join("");
     if (variab == "x") {

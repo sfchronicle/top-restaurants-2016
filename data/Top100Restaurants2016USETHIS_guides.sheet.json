@@ -75,33 +75,37 @@
     "SingularStandouts": "x",
     "GreatPizza": "x",
     "TopBurgers": "x",
-    "Top100Classics": "x"
+    "Top100Classics": "x",
+    "Historic": "x"
   },
   {
-    "Name": "Bocadillos"
+    "Name": "Bix"
   },
   {
-    "Name": "Boot & Shoe Service",
+    "Name": "Bocadillos",
     "Views": "x"
   },
   {
-    "Name": "Bottega",
+    "Name": "Boot & Shoe Service",
     "TopBurgers": "x",
     "Top100Classics": "x",
     "LiveMusic": "x",
     "FourStars": "x"
   },
   {
-    "Name": "Bouchon"
+    "Name": "Bottega"
   },
   {
-    "Name": "Boulevard",
+    "Name": "Bouchon",
     "GreatPizza": "x",
     "FourStars": "x"
   },
   {
-    "Name": "Bravas Bar de Tapas",
+    "Name": "Boulevard",
     "SingularStandouts": "x"
+  },
+  {
+    "Name": "Bravas Bar de Tapas"
   },
   {
     "Name": "Bull Valley Roadhouse"
@@ -111,6 +115,9 @@
   },
   {
     "Name": "Cala"
+  },
+  {
+    "Name": "Californios"
   },
   {
     "Name": "Camino"
@@ -173,10 +180,10 @@
     "Name": "Gary Danko"
   },
   {
-    "Name": "? Hawker Fare"
+    "Name": "Hawker Fare"
   },
   {
-    "Name": "? Hong Kong Lounge 2"
+    "Name": "Hong Kong Lounge 2"
   },
   {
     "Name": "House of Prime Rib"
@@ -236,7 +243,7 @@
     "Name": "Nico"
   },
   {
-    "Name": "? Nido"
+    "Name": "Nido"
   },
   {
     "Name": "Ninebark"
@@ -254,13 +261,16 @@
     "Name": "Oenotri"
   },
   {
+    "Name": "Old Bus Tavern"
+  },
+  {
     "Name": "Omakase"
   },
   {
     "Name": "Oso"
   },
   {
-    "Name": "? Pabu"
+    "Name": "Pabu"
   },
   {
     "Name": "Park Tavern"
@@ -272,7 +282,7 @@
     "Name": "Petit Crenn"
   },
   {
-    "Name": "? Piccino"
+    "Name": "Piccino"
   },
   {
     "Name": "Picco"
@@ -305,6 +315,9 @@
     "Name": "Range"
   },
   {
+    "Name": "Rasa"
+  },
+  {
     "Name": "Redd"
   },
   {
@@ -320,7 +333,7 @@
     "Name": "Saison"
   },
   {
-    "Name": "? Sante"
+    "Name": "Sante"
   },
   {
     "Name": "Scopa "

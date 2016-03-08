@@ -13,9 +13,19 @@
     >{{l.label}}</a>
   </nav>
 
+  <div class="subregions-block"
+    ng-repeat="subregion in subregions"
+    ng-click="setSubregion(subregion)"
+    ng-class="{ 'visible': restaurantActive}">
+    <div class="subregion-class"
+      ng-class="{ 'active': subregion == activesubregion}">
+      {{subregion}}
+    </div>
+  </div>
+
   <div class="restaurant-block"
     ng-model = "selected"
-    ng-repeat="restaurant in restaurants_by_region"
+    ng-repeat="restaurant in restaurants_by_subregion"
     ng-click="chooseRestaurant(restaurant)"
     ng-class="{ 'visible': restaurantActive}">
     {{restaurant.Name}}

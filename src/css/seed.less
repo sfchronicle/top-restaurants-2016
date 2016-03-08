@@ -36,7 +36,18 @@ body {
   }
 }
 
-.restaurant-block {
+.subregions-block {
+  background: @df-middle-gray;
+  width: 400px;
+  margin: 5px auto;
+}
+.subregion-class {
+  &.active {
+    border: 5px black solid;
+  }
+}
+
+.restaurant-block, .subregions-block {
   cursor: pointer;
   display: block;
   &.visible {

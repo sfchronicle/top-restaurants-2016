@@ -16,6 +16,8 @@ new Share(".share-button", {
   }
 });
 
+
+
 var app = require("./application");
 
 var configFunction = function($state, $router) {
@@ -23,19 +25,19 @@ var configFunction = function($state, $router) {
   $router.otherwise("/top100/");
 
   $state.state("cuisines", {
-    url: "/cuisines/{cuisine}/{name}",
+    url: "/cuisines/{cuisine}cuisine/{name}",
     template: require("./_cuisineView.html"),
     controller: require("./cuisineController")
   });
 
   $state.state("regions", {
-    url: "/regions/{region}/{name}",
+    url: "/regions/{region}region/{name}",
     template: require("./_regionView.html"),
     controller: require("./regionController")
   });
 
   $state.state("guides", {
-    url: "/guides/{guide}/{name}",
+    url: "/guides/{guide}guide/{name}",
     template: require("./_guideView.html"),
     controller: require("./guideController")
   });
