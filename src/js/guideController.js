@@ -6,7 +6,7 @@ var guideController = function($scope, $state, $location) {
   $scope.restaurantPageData = [];
 
   $scope.guides = [
-    {label: "Singular Standouts", data:"singularstandouts"},
+    {label: "One of a Kind", data:"oneofakind"},
     {label: "Great Pizza", data:"greatpizza"},
     {label: "Top Burgers", data:"topburgers"},
     {label: "Open Late", data:"openlate"},
@@ -17,9 +17,9 @@ var guideController = function($scope, $state, $location) {
     {label: "Top 100 Classics", data:"top100classics"},
     {label: "Historic", data:"historic"},
     {label: "Views", data:"views"},
-    {label: "Live Music", data:"livemusic"},
+    {label: "New", data:"new"},
     {label: "Private Rooms", data:"privaterooms"},
-    {label: "Romantic", data:"romantic"},
+    {label: "Tasting Menus", data:"tastingmenus"},
     {label: "Four Stars", data:"fourstars"},
   ];
 

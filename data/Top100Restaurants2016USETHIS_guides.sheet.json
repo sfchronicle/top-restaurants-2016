@@ -1,82 +1,58 @@
 [
   {
     "Name": "A16 ",
-    "SingularStandouts": "x"
+    "GreatPizza": "x",
+    "SaturdayLunch": "x"
   },
   {
     "Name": "Acquerello",
-    "ExceptionalBars": "x",
-    "SaturdayLunch": "x",
-    "Historic": "x",
-    "LiveMusic": "x"
+    "Top100Classics": "x"
   },
   {
     "Name": "Ad Hoc",
-    "GreatPizza": "x",
-    "Views": "x",
-    "Romantic": "x",
-    "FourStars": "x"
+    "BestofBrunch": "x",
+    "Views": "x"
   },
   {
-    "Name": "Akiko’s",
-    "GreatPizza": "x",
-    "TopBurgers": "x",
-    "OpenLate": "x",
-    "Outdoor": "x",
-    "FourStars": "x"
+    "Name": "Akiko’s"
   },
   {
     "Name": "Al's Place",
-    "GreatPizza": "x",
-    "TopBurgers": "x",
-    "BestofBrunch": "x",
-    "Top100Classics": "x",
     "PrivateRooms": "x"
   },
   {
-    "Name": "AQ",
-    "SingularStandouts": "x",
-    "Top100Classics": "x"
+    "Name": "AQ"
   },
   {
-    "Name": "Atelier Crenn",
-    "Top100Classics": "x"
+    "Name": "Atelier Crenn"
   },
   {
     "Name": "Aziza",
-    "OpenLate": "x",
-    "Outdoor": "x"
+    "OneofaKind": "x"
   },
   {
     "Name": "Bar Agricole",
-    "TopBurgers": "x",
-    "Outdoor": "x"
+    "ExceptionalBars": "x",
+    "BestofBrunch": "x"
   },
   {
     "Name": "Barbacco",
-    "GreatPizza": "x",
-    "Outdoor": "x",
-    "Romantic": "x"
+    "TastingMenus": "x"
   },
   {
     "Name": "Belga",
-    "SingularStandouts": "x",
-    "TopBurgers": "x",
-    "Top100Classics": "x"
+    "OneofaKind": "x"
   },
   {
     "Name": "Benu",
-    "SingularStandouts": "x",
-    "Top100Classics": "x",
     "FourStars": "x"
   },
   {
     "Name": "Bistro Don Giovanni",
-    "SingularStandouts": "x",
     "GreatPizza": "x",
     "TopBurgers": "x",
-    "Top100Classics": "x",
-    "Historic": "x"
+    "Outdoor": "x",
+    "SaturdayLunch": "x"
   },
   {
     "Name": "Bix"
@@ -87,31 +63,36 @@
   },
   {
     "Name": "Boot & Shoe Service",
-    "TopBurgers": "x",
-    "Top100Classics": "x",
-    "LiveMusic": "x",
-    "FourStars": "x"
+    "GreatPizza": "x",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Bottega"
+    "Name": "Bottega",
+    "SaturdayLunch": "x"
   },
   {
     "Name": "Bouchon",
-    "GreatPizza": "x",
-    "FourStars": "x"
+    "OpenLate": "x",
+    "Outdoor": "x",
+    "SaturdayLunch": "x"
   },
   {
     "Name": "Boulevard",
-    "SingularStandouts": "x"
+    "Top100Classics": "x"
   },
   {
-    "Name": "Bravas Bar de Tapas"
+    "Name": "Bravas Bar de Tapas",
+    "Outdoor": "x",
+    "SaturdayLunch": "x"
   },
   {
-    "Name": "Bull Valley Roadhouse"
+    "Name": "Bull Valley Roadhouse",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Cafe at Chez Panisse "
+    "Name": "Cafe at Chez Panisse ",
+    "GreatPizza": "x",
+    "SaturdayLunch": "x"
   },
   {
     "Name": "Cala"
@@ -123,25 +104,34 @@
     "Name": "Camino"
   },
   {
-    "Name": "Campo Fina"
+    "Name": "Campo Fina",
+    "GreatPizza": "x",
+    "Outdoor": "x"
   },
   {
-    "Name": "The Cavalier"
+    "Name": "The Cavalier",
+    "OneofaKind": "x",
+    "ExceptionalBars": "x",
+    "BestofBrunch": "x"
   },
   {
     "Name": "DELETE - Central Kitchen"
   },
   {
-    "Name": "Chez Panisse"
+    "Name": "Chez Panisse",
+    "Top100Classics": "x",
+    "FourStars": "x"
   },
   {
     "Name": "Ciccio"
   },
   {
-    "Name": "Coi"
+    "Name": "Coi",
+    "FourStars": "x"
   },
   {
-    "Name": "Comal"
+    "Name": "Comal",
+    "ExceptionalBars": "x"
   },
   {
     "Name": "The Commissary"
@@ -150,43 +140,55 @@
     "Name": "Commonwealth"
   },
   {
-    "Name": "Coqueta"
+    "Name": "Coqueta",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Cotogna"
+    "Name": "Cotogna",
+    "GreatPizza": "x"
   },
   {
     "Name": "Delfina"
   },
   {
-    "Name": "? The Dock at Linden Street"
+    "Name": "? The Dock at Linden Street",
+    "Outdoor": "x"
   },
   {
     "Name": "Farmshop, Marin"
   },
   {
-    "Name": "Flour+Water"
+    "Name": "Flour+Water",
+    "OpenLate": "x"
   },
   {
-    "Name": "Foreign Cinema"
+    "Name": "Foreign Cinema",
+    "BestofBrunch": "x"
   },
   {
     "Name": "Frances"
   },
   {
-    "Name": "French Laundry"
+    "Name": "French Laundry",
+    "SaturdayLunch": "x",
+    "Top100Classics": "x",
+    "FourStars": "x"
   },
   {
     "Name": "Gary Danko"
   },
   {
-    "Name": "Hawker Fare"
+    "Name": "Hawker Fare",
+    "OneofaKind": "x"
   },
   {
-    "Name": "Hong Kong Lounge 2"
+    "Name": "Hong Kong Lounge 2",
+    "SaturdayLunch": "x"
   },
   {
-    "Name": "House of Prime Rib"
+    "Name": "House of Prime Rib",
+    "OneofaKind": "x",
+    "Historic": "x"
   },
   {
     "Name": "Ichi Sushi + Ni Bar"
@@ -195,25 +197,32 @@
     "Name": "Ippuku"
   },
   {
-    "Name": "Iyasare"
+    "Name": "Iyasare",
+    "SaturdayLunch": "x"
   },
   {
-    "Name": "Kokkari Estiatorio"
+    "Name": "Kokkari Estiatorio",
+    "ExceptionalBars": "x"
   },
   {
     "Name": "Kusakabe"
   },
   {
-    "Name": "La Ciccia"
+    "Name": "La Ciccia",
+    "OneofaKind": "x"
   },
   {
-    "Name": "La Folie"
+    "Name": "La Folie",
+    "Top100Classics": "x",
+    "FourStars": "x"
   },
   {
     "Name": "Lazy Bear"
   },
   {
-    "Name": "Liholiho Yacht Club"
+    "Name": "Liholiho Yacht Club",
+    "OneofaKind": "x",
+    "ExceptionalBars": "x"
   },
   {
     "Name": "Madrona Manor"
@@ -222,22 +231,31 @@
     "Name": "Mamacita"
   },
   {
-    "Name": "Manresa"
+    "Name": "Manresa",
+    "FourStars": "x"
   },
   {
-    "Name": "Marlowe"
+    "Name": "Marlowe",
+    "TopBurgers": "x",
+    "BestofBrunch": "x"
   },
   {
-    "Name": "? Maven"
+    "Name": "? Maven",
+    "OpenLate": "x",
+    "ExceptionalBars": "x",
+    "BestofBrunch": "x"
   },
   {
     "Name": "DELETE - Molina"
   },
   {
-    "Name": "Monsieur Benjamin"
+    "Name": "Monsieur Benjamin",
+    "OpenLate": "x",
+    "BestofBrunch": "x"
   },
   {
-    "Name": "Mourad"
+    "Name": "Mourad",
+    "OneofaKind": "x"
   },
   {
     "Name": "Nico"
@@ -249,10 +267,13 @@
     "Name": "Ninebark"
   },
   {
-    "Name": "Nopa"
+    "Name": "Nopa",
+    "OpenLate": "x",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Nopalito"
+    "Name": "Nopalito",
+    "SaturdayLunch": "x"
   },
   {
     "Name": "Octavia"
@@ -270,10 +291,14 @@
     "Name": "Oso"
   },
   {
-    "Name": "Pabu"
+    "Name": "Pabu",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Park Tavern"
+    "Name": "Park Tavern",
+    "TopBurgers": "x",
+    "ExceptionalBars": "x",
+    "BestofBrunch": "x"
   },
   {
     "Name": "Perbacco"
@@ -282,58 +307,79 @@
     "Name": "Petit Crenn"
   },
   {
-    "Name": "Piccino"
+    "Name": "Piccino",
+    "GreatPizza": "x"
   },
   {
     "Name": "Picco"
   },
   {
-    "Name": "Piperade"
+    "Name": "Piperade",
+    "OneofaKind": "x"
   },
   {
-    "Name": "Pizzaiolo "
+    "Name": "Pizzaiolo ",
+    "GreatPizza": "x"
   },
   {
-    "Name": "Poggio"
+    "Name": "Poggio",
+    "GreatPizza": "x",
+    "ExceptionalBars": "x",
+    "Outdoor": "x"
   },
   {
     "Name": "Press"
   },
   {
-    "Name": "The Progress"
+    "Name": "The Progress",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Prospect"
+    "Name": "Prospect",
+    "TopBurgers": "x",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Quince"
+    "Name": "Quince",
+    "FourStars": "x"
   },
   {
-    "Name": "Ramen Shop"
+    "Name": "Ramen Shop",
+    "OneofaKind": "x",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Range"
+    "Name": "Range",
+    "ExceptionalBars": "x"
   },
   {
     "Name": "Rasa"
   },
   {
-    "Name": "Redd"
+    "Name": "Redd",
+    "Outdoor": "x",
+    "SaturdayLunch": "x"
   },
   {
-    "Name": "Redd Wood"
+    "Name": "Redd Wood",
+    "GreatPizza": "x",
+    "Outdoor": "x"
   },
   {
-    "Name": "The Restaurant at Meadowood"
+    "Name": "The Restaurant at Meadowood",
+    "Outdoor": "x",
+    "FourStars": "x"
   },
   {
     "Name": "Rich Table"
   },
   {
-    "Name": "Saison"
+    "Name": "Saison",
+    "FourStars": "x"
   },
   {
-    "Name": "Sante"
+    "Name": "Sante",
+    "Outdoor": "x"
   },
   {
     "Name": "Scopa "
@@ -345,10 +391,13 @@
     "Name": "Sir & Star"
   },
   {
-    "Name": "Slanted Door"
+    "Name": "Slanted Door",
+    "OneofaKind": "x",
+    "SaturdayLunch": "x"
   },
   {
-    "Name": "SPQR"
+    "Name": "SPQR",
+    "SaturdayLunch": "x"
   },
   {
     "Name": "State Bird Provisions"
@@ -357,36 +406,61 @@
     "Name": "Sushi Ran"
   },
   {
-    "Name": "Swan Oyster Depot"
+    "Name": "Swan Oyster Depot",
+    "OneofaKind": "x",
+    "SaturdayLunch": "x",
+    "Top100Classics": "x",
+    "Historic": "x"
   },
   {
-    "Name": "Terra/Bar Terra"
+    "Name": "Terra/Bar Terra",
+    "Top100Classics": "x"
   },
   {
-    "Name": "Tosca Cafe"
+    "Name": "Tosca Cafe",
+    "OpenLate": "x",
+    "ExceptionalBars": "x",
+    "Historic": "x"
   },
   {
     "Name": "Trestle"
   },
   {
-    "Name": "Trick Dog"
+    "Name": "Trick Dog",
+    "OneofaKind": "x",
+    "TopBurgers": "x",
+    "OpenLate": "x",
+    "ExceptionalBars": "x"
   },
   {
-    "Name": "Trou Normand"
+    "Name": "Trou Normand",
+    "OpenLate": "x",
+    "ExceptionalBars": "x",
+    "Outdoor": "x"
   },
   {
     "Name": "Village Sake"
   },
   {
-    "Name": "Wayfare Tavern"
+    "Name": "Wayfare Tavern",
+    "TopBurgers": "x",
+    "SaturdayLunch": "x"
   },
   {
-    "Name": "Yank Sing"
+    "Name": "Yank Sing",
+    "SaturdayLunch": "x",
+    "Top100Classics": "x",
+    "Historic": "x"
   },
   {
-    "Name": "Zarzuela"
+    "Name": "Zarzuela",
+    "Top100Classics": "x"
   },
   {
-    "Name": "Zuni Cafe"
+    "Name": "Zuni Cafe",
+    "TopBurgers": "x",
+    "ExceptionalBars": "x",
+    "SaturdayLunch": "x",
+    "Top100Classics": "x"
   }
 ]
