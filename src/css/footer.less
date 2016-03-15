@@ -1,0 +1,51 @@
+.credits, .sources {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0 15px 8px 15px;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 20px;
+  clear: both;
+
+  @media @tablet {
+    margin-bottom: 0;
+  }
+  .credit-name {
+    font-weight: 700;
+  }
+}
+
+.sources {
+  margin-bottom: 10px;
+  a {
+    color: @green;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  background: @df-charcoal;
+  opacity: 0.95;
+  padding: 0 10px;
+  position: relative;
+  z-index: 99;
+  margin-top: 10px;
+
+  .logo {
+    float: left;
+    margin-right: 10px;
+
+    img {
+      margin-top: 10px;
+      height: 20px;
+    }
+  }
+
+  &::after {
+    clear: both;
+    content: " ";
+    display: block;
+  }
+}

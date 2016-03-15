@@ -31,6 +31,34 @@
     {{restaurant.Name}}
   </div>
 
-  <div ng-include=" 'restaurantPage.html' "></div>
+      
+    <div class="page" id="restaurant">
+      <div class="container">
+
+        <div class="rest-img">
+          <img src="{{restaurantPageData.Photo}}" alt="" />
+        </div>
+        
+
+        <div class="content">
+          
+          <div id="infobox">
+           <img src="https://maps.googleapis.com/maps/api/staticmap?size=265x240&maptype=roadmap\
+&markers=size:mid%7Ccolor:red%7C{{restaurantPageData.GoogleAddress}}&zoom=15&key=AIzaSyAbXyrIZ7FcFFqiAEdopB2-tZ8ce1ezh_s" >
+
+            
+            {{restaurantPageData.Chef}}
+            {{restaurantPageData.Meals}}  
+            {{restaurantPageData.Entertainment}}
+          </div>
+
+          <div id="article">
+            <h1>{{restaurantPageData.Name}}</h1>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
 
 </section>

@@ -1,6 +1,3 @@
-@import "values";
-@import "flexbox";
-
 //defensive coding
 * {
   //border-box, you're the best
@@ -16,14 +13,16 @@
 //elements
 body {
   color: @df-off-black;
-  font-family: @df-serif;
-  font-size: @df-text-base;
-  line-height: @df-line-base;
+  font-family: @serif;
+  font-size: @text-base;
+  line-height: @line-base;
   padding: 0;
   margin: 0;
   //remove 300ms click delay in Safari, AKA still the worst
   touch-action: manipulation;
 }
+
+
 
 main {
   display: block;
@@ -47,7 +46,7 @@ img, video, embed, object, iframe {
 
 h1, h2, h3, h4, h5, h6 {
   color: @df-off-black;
-  margin: @df-line-base 0 (@df-line-base/2) 0;
+  margin: @line-base 0 (@line-base/2) 0;
 }
 
 h1 {
@@ -63,7 +62,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  line-height: @df-line-base;
+  line-height: @line-base;
 }
 h3 {
   font-size: 22px;
@@ -73,7 +72,7 @@ h4 {
   font-size: 16px;
   font-weight: 600;
   line-height: 24 / 16;
-  margin: @df-line-base/2 0 0 0;
+  margin: @line-base/2 0 0 0;
 }
 
 //header and menu
@@ -157,7 +156,7 @@ nav.main-nav {
 .thin-div {
   border-bottom: 1px solid @df-light-gray;
   margin-bottom: 15px;
-  font-family: @df-sans;
+  font-family: @sans;
   margin: auto;
   max-width: 900px;
 
@@ -179,7 +178,7 @@ nav.main-nav {
   margin-top: 15px;
   max-width: 900px;
   font-size: 17px;
-  font-family: @df-sans;
+  font-family: @sans;
 
   .story {
     .flex(0 0 25%);
