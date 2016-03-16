@@ -9,15 +9,16 @@
       ng-click="restaurantActive = 0"
     >{{l.label}}</a>
   </nav>
+</section>
 
-  <div class="restaurant-block"
+<div class="rest-cuisines">
+  <h2 class="rest-title">{{cuisine}}</h2>
+  <div class="restaurant-boxes col-xs-6 col-sm-4 col-md-4 col-lg-3"
     ng-model = "selected"
     ng-repeat="restaurant in restaurants_by_cuisine"
     ng-click="chooseRestaurant(restaurant)"
     ng-class="{ 'visible': restaurantActive}">
+    <img src="./assets/restaurant.jpg"></img>
     {{restaurant.Name}}
   </div>
-
-  <div ng-include src="_restaurantPage.html"></div>
-
-</section>
+</div>

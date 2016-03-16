@@ -1,8 +1,8 @@
 require("./lib/social");
-// require("./lib/ads");
-// var track = require("./lib/tracking");
+
 
 var Share = require("share");
+
 
 new Share(".share-button", {
   description: "Check out the Chronicle's top 100 restaurants of 2016.",

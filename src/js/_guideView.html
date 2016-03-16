@@ -10,7 +10,7 @@
     >{{l.label}}</a>
   </nav>
 
-  <div class="restaurant-block"
+  <div class="restaurant-block col-xs-6 col-sm-4 col-md-4 col-lg-3"
     ng-model = "selected"
     ng-repeat="restaurant in restaurants_by_guide"
     ng-click="chooseRestaurant(restaurant)"
@@ -18,6 +18,6 @@
     {{restaurant.Name}}
   </div>
 
-  <div ng-include=" 'restaurantPage.html' "></div>
+
 
 </section>
