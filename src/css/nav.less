@@ -1,54 +1,22 @@
-.top-bar {
-  border-bottom: 1px solid @df-middle-gray;
-
-  @media @mobile {
-    height: 40px;
-    width: 100%;
-  }
-
-  .logo {
-    position: relative;
-    top: 5px;
-    text-align: center;
-    display: block;
-    height: 30px;
-
-    @media @mobile {
-      top: 20px;
-    }
-
-    img {
-      box-sizing: content-box;
-      height: 30px;
-      background: white;
-      padding: 10px;
-
-      @media @mobile {
-        padding: 10px;
-        height: 20px;
-      }
-    }
-  }
-}
-
-
 nav.sections, nav.select-cuisine, nav.select-region, nav.select-guide {
   display: block;
-  font-size: 20px;
-  margin: auto;
+  font-size: 0.9em;
   text-align: center;
-  background: darken(red,30%);
 
   a {
     cursor: pointer;
     display: inline-block;
-    padding: 0px 8px;
-    border-radius: 8px;
+    padding: 0.7em 0.7em 0;
     transition: none;
-    color: @df-middle-gray;
+    color: #333;
+    font-family:@sans-light;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+
 
     &.active {
-      color: white;
+      color: #333;
+      background: #DADADA;
 
       &:hover {
         text-decoration: none;
@@ -73,15 +41,17 @@ nav.sections, nav.select-cuisine, nav.select-region, nav.select-guide {
 }
 
 
+.top100-nav {
+  a {
+    &.active {
+      background: #FAF9F4 !important;
+    }
+  }
+}
 
 .pipes {
 
-  &::after {
-    content: " | ";
-    color: black;
-  }
 
-  &:last-child::after {
-    content: none;
-  }
+  
+
 }

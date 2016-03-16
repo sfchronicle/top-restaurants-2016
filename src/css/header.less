@@ -1,18 +1,55 @@
 .banner {
-  .top100-logo {
-    width: 200px;
-    margin: auto;
-    margin-top: 20px;
-  }
+
+	background-color:#faf9f4;
+  display: inline-block;
+  width: 100%;
+
+	.top100-logo {
+    	max-width: 120px;
+    	margin-left: 2%;
+    	width: 100%;
+  	}
 }
 
 .centerpiece {
-	max-width: 1200px;
-	margin: 0 auto;
-	text-align: center;
 	width:100%;
 
 	img {
 	  width:100%;
 	}
+}
+
+.top-bar {
+  display:inline;
+
+  @media @mobile {
+    height: 40px;
+    width: 100%;
+  }
+
+  h1 {
+  	font-family:@sans-light;
+    text-align: center;
+    margin: 1px 0 3px;;
+    font-size: 2.5em;
+    font-weight: 100;
+  }
+
+  .logo {
+    text-align: center;
+    display: block;
+
+    @media @mobile {
+      top: 20px;
+    }
+
+    img {
+      box-sizing: content-box;
+      height: 30px;
+
+      @media @mobile {
+        height: 20px;
+      }
+    }
+  }
 }
