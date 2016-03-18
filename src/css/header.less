@@ -5,10 +5,39 @@
   width: 100%;
 
 	.top100-logo {
-    	max-width: 120px;
-    	margin-left: 2%;
-    	width: 100%;
-  	}
+  	max-width: 120px;
+  	margin-left: 2%;
+  	width: 100%;
+    
+    @media @tablet {
+      max-width: 90px;
+      margin: 0 auto;
+    }
+  }
+
+  @media @mobile {
+    nav {
+  overflow-x: scroll; /* 1 */
+  -webkit-overflow-scrolling: touch; /* 2 */
+}
+
+ul {
+  text-align: justify;
+  width: 36em;
+  height: 50px;
+}
+
+
+ul:after { /* 5 */
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+li {
+  display: inline-block; /* 6 */
+}
+  }
 }
 
 .centerpiece {
@@ -33,6 +62,10 @@
     margin: 1px 0 3px;;
     font-size: 2.5em;
     font-weight: 100;
+
+    @media @tablet {
+      font-size:1.9em;
+    }
   }
 
   .logo {
@@ -40,7 +73,7 @@
     display: block;
 
     @media @mobile {
-      top: 20px;
+      margin-top: 20px;
     }
 
     img {

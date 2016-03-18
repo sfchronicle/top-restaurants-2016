@@ -1,13 +1,21 @@
 #restaurant {
+
+  margin-bottom: 50px;
+  display: inline-block;
+  width: 100%;
   
   .container {
     width:100%;
-    max-width:800px;
+    max-width:1000px;
     margin:2em auto 4em;
   }
 
   .rest-img {
     width:100%;
+
+    img {
+    width:100%;
+    }
 
   }
 
@@ -15,24 +23,41 @@
     margin-top: 2em;
   }
 
+  h1 {
+    margin:0;
+    text-align:center;
+  }
+  p {
+      font-size: 0.9em;
+      text-align:center;
+    }
 }
 
 #infobox {
 
   float: left;
   max-width: 30%;
-  text-align: left;
   font-family: @sans;
+  font-size:0.8em;
+
+  p {
+    text-align: left;
+  }
+
 }
 
 #article {
 
   float: right;
     width: 69%;
-    padding-left: 2em;
+    padding:0 0.5em 0 1em;
     text-align: left;
-
-    h1 {
-      margin-top:0;
+    
+    .content {
+    font-size: 0.97em;
+    font-family: georgia, serif;
+    text-align: left;
+    margin-top: 0;
+    
     }
 }

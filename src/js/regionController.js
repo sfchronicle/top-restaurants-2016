@@ -54,8 +54,8 @@ var regionController = function($scope, $state, $location) {
     var r = data.data.filter(item => item.URLname == $state.params.name).pop();
     $scope.chooseRestaurant(r);
   }
-
 };
+
 
 regionController.$inject = ["$scope", "$state", "$location"];
 module.exports = regionController;

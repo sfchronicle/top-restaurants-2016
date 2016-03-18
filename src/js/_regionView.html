@@ -39,24 +39,30 @@
       <div class="container">
 
         <div class="rest-img">
+        	<h1>{{restaurantPageData.Name}}</h1>
+            <p>By: Michael Bauer</p>
           <img src="{{restaurantPageData.Photo}}" alt="" />
         </div>
         
-
         <div class="content">
-          
           <div id="infobox">
-           <img src="https://maps.googleapis.com/maps/api/staticmap?size=265x240&maptype=roadmap\
-&markers=size:mid%7Ccolor:red%7C{{restaurantPageData.GoogleAddress}}&zoom=15&key=AIzaSyAbXyrIZ7FcFFqiAEdopB2-tZ8ce1ezh_s" >
+       
+	        	<div id="map">
+	           	<a href="https://www.google.com/maps/place/{{restaurantPageData.GoogleAddress}}"> 
+								<img src="https://maps.googleapis.com/maps/api/staticmap?size=265x240&maptype=roadmap\
+								&markers=size:mid%7Ccolor:red%7C{{restaurantPageData.GoogleAddress}}&zoom=15&key=AIzaSyAbXyrIZ7FcFFqiAEdopB2-tZ8ce1ezh_s">
+							</a>
+						</div>
 
-            
-            {{restaurantPageData.Chef}}
-            {{restaurantPageData.Meals}}  
-            {{restaurantPageData.Entertainment}}
+            <p>{{restaurantPageData.Website}}</p>
+            <p>{{restaurantPageData.Phone}}</p>
+            <p>{{restaurantPageData.Noise}}</p>  
+            <p>{{restaurantPageData.Prices}}</p>
           </div>
 
           <div id="article">
-            <h1>{{restaurantPageData.Name}}</h1>
+            
+            <p class="content">Shelley Lindgren and her crew exposed the cuisine of southern Italy to Northern California when they opened this restaurant 11 years ago in the Marina. Two years ago they added an outpost in Oakland. The restaurants have different — but equally adept — menus, orchestrated by Rocky Maselli, who creates dishes such as pasta with goat sugo, broccoli rabe and crisp bread crumbs; or spaghetti with sea urchin, lemon and chervil. The restaurants also feature nine Neapolitan pizzas, and the desserts are worth the calories. Lindgren has compiled an amazing Italian wine list; many labels may be unfamiliar, but there’s always someone on the floor to lead diners to exciting discoveries. The Rockridge location features exceptional cocktails masterminded by Lindgren’s husband, Greg Lindgren, who owns Rye and 15 Romolo.</p>
           </div>
 
         </div>
