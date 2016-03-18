@@ -1,6 +1,5 @@
 <section class="regions">
 
-
   <nav class="select-region">
     <a
       ng-repeat="l in regions"
@@ -12,24 +11,29 @@
     >{{l.label}}</a>
   </nav>
 
-  <div class="subregions-block"
-    ng-repeat="subregion in subregions"
-    ng-click="setSubregion(subregion)"
-    ng-class="{ 'visible': restaurantActive}">
-    <div class="subregion-class"
-      ng-class="{ 'active': subregion == activesubregion}">
-      {{subregion}}
-    </div>
-  </div>
+</section>
 
-  <div class="restaurant-block col-xs-6 col-sm-4 col-md-4 col-lg-3"
+<div class="subregions-block"
+  ng-repeat="subregion in subregions"
+  ng-click="setSubregion(subregion)"
+  ng-class="{ 'visible': restaurantActive}">
+  <div class="subregion-class"
+    ng-class="{ 'active': subregion == activesubregion}">
+    {{subregion}}
+  </div>
+</div>
+
+<div class="rest-regions">
+  <div class="restaurant-boxes col-xs-6 col-sm-4 col-md-4 col-lg-3"
     ng-model = "selected"
     ng-repeat="restaurant in restaurants_by_subregion"
     ng-click="chooseRestaurant(restaurant)"
     ng-class="{ 'visible': restaurantActive}">
+    <img src="./assets/restaurant.jpg" />
     {{restaurant.Name}}
   </div>
-
+</div>
+  
       
     <div class="page" id="restaurant">
       <div class="container">
@@ -60,4 +64,4 @@
       </div>
   </div>
 
-</section>
+
