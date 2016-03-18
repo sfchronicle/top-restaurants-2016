@@ -1,6 +1,12 @@
 var data = require("./guideData");
 
+var bound_box = document.getElementById("top100").getBoundingClientRect();
+console.log(bound_box);
+
 var top100Controller = function($scope, $state, $location) {
+
+  document.getElementById("home").setAttribute("style", "margin-left: " + (bound_box.left/2)+"px");
+  console.log(bound_box.left);
 
   $scope.data = data.data;
   $scope.show = 0;
@@ -26,8 +32,8 @@ var top100Controller = function($scope, $state, $location) {
   }
 
   $scope.reset = function() {
-    console.log("we got here");
-    //$state.go("top100",{name: ""}, {notify: false});
+    $scope.restaurantActive = 0;
+    $state.go("top100",{name: ""}, {notify: false});
   }
 
 };
