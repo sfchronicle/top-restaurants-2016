@@ -134,6 +134,9 @@
     "ExceptionalBars": "x"
   },
   {
+    "Name": "Commis"
+  },
+  {
     "Name": "The Commissary"
   },
   {
@@ -151,7 +154,12 @@
     "Name": "Delfina"
   },
   {
-    "Name": "? The Dock at Linden Street",
+    "Name": "Del Popolo",
+    "OpenLate": "x",
+    "New": "x"
+  },
+  {
+    "Name": "DELETE - The Dock at Linden Stree",
     "Outdoor": "x"
   },
   {
@@ -182,8 +190,9 @@
     "OneofaKind": "x"
   },
   {
-    "Name": "Hong Kong Lounge 2",
-    "SaturdayLunch": "x"
+    "Name": "Hong Kong Lounge II",
+    "SaturdayLunch": "x",
+    "PrivateRooms": "x"
   },
   {
     "Name": "House of Prime Rib",
@@ -225,6 +234,14 @@
     "ExceptionalBars": "x"
   },
   {
+    "Name": "Little Gem",
+    "New": "x"
+  },
+  {
+    "Name": "Lord Stanley",
+    "OpenLate": "x"
+  },
+  {
     "Name": "Madrona Manor"
   },
   {
@@ -240,7 +257,7 @@
     "BestofBrunch": "x"
   },
   {
-    "Name": "? Maven",
+    "Name": "DELETE - Maven",
     "OpenLate": "x",
     "ExceptionalBars": "x",
     "BestofBrunch": "x"
@@ -292,7 +309,8 @@
   },
   {
     "Name": "Pabu",
-    "ExceptionalBars": "x"
+    "ExceptionalBars": "x",
+    "PrivateRooms": "x"
   },
   {
     "Name": "Park Tavern",
@@ -308,7 +326,8 @@
   },
   {
     "Name": "Piccino",
-    "GreatPizza": "x"
+    "GreatPizza": "x",
+    "PrivateRooms": "x"
   },
   {
     "Name": "Picco"
@@ -379,7 +398,8 @@
   },
   {
     "Name": "Sante",
-    "Outdoor": "x"
+    "Outdoor": "x",
+    "PrivateRooms": "x"
   },
   {
     "Name": "Scopa "
@@ -440,6 +460,9 @@
   },
   {
     "Name": "Village Sake"
+  },
+  {
+    "Name": "Volta"
   },
   {
     "Name": "Wayfare Tavern",

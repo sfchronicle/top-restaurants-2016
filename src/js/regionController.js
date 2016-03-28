@@ -16,13 +16,13 @@ var regionController = function($scope, $state, $location) {
     var region = l;
     var subregions = [];
     if (region == "sanfrancisco") {
-      subregions = ["SoMa", "Mission", "Marina", "Russian Hill", "Financial District", "Presidio", "Castro", "The Richmond", "Noe Valley", "Pacific Heights", "Nopa", "Bernal Heights", "Nob Hill"];
+      subregions = ["Bernal Heights", "Castro", "Dogpatch", "Embarcadero", "Financial District", "Lower Haight", "Hayes Valley", "Marina/Cow Hollow", "Mission", "Noe Valley", "North Beach", "Presidio", "Pacific Heights", "Russian Hill/Nob Hill", "SoMa", "Tenderloin", "The Richmond", "Western Addition"];
     } else if (region == "northbay") {
-      subregions = ["Yountville", "Napa", "Healdsburg", "Larkspur"];
+      subregions = ["Fairfax", "Healdsburg", "Larkspur", "Mill Valley", "Napa", "Olema", "Sausalito", "Sonoma", "St. Helena", "Yountville"];
     } else if (region == "eastbay") {
-      subregions = ["Oakland", "Port Costa", "Berkeley"];
+      subregions = ["Berkeley", "Oakland", "Port Costa"];
     } else if (region == "southbay") {
-      subregions = ["Los Gatos"];
+      subregions = ["Burlingame", "Los Gatos"];
     }
     $scope.subregions = subregions;
   };

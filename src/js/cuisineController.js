@@ -7,7 +7,6 @@ var cuisineController = function($scope, $state, $location) {
 
   $scope.cuisines = [
     {label: "American", data: "american"},
-    {label: "Basque", data: "basque"},
     {label: "Belgian", data: "belgian"},
     {label: "British", data: "british"},
     {label: "Chinese", data: "chinese"},
@@ -23,7 +22,7 @@ var cuisineController = function($scope, $state, $location) {
     {label: "Northern California", data: "northerncalifornia"},
     {label: "Seafood", data: "seafood"},
     {label: "Spanish", data: "spanish"},
-    {label: "Steakhouse", data: "steakhouse"},
+    {label: "Scandinavian", data: "scandinavian"},
     {label: "Thai", data: "thai"},
     {label: "Vietnamese", data: "vietnamese"}
   ]
@@ -47,6 +46,10 @@ var cuisineController = function($scope, $state, $location) {
     });
     $scope.restaurants_by_cuisine = restaurants_by_cuisine;
     $scope.cuisine = cuisine;
+    $scope.cuisine_long = cuisine;
+    if ($scope.cuisine == "northerncalifornia") {
+      $scope.cuisine_long = "Northern California";
+    }
   };
 
   $scope.chooseRestaurant = function(restaurant) {
